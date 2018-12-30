@@ -16,8 +16,9 @@
 
 <div id="root" class="container">
 
-    <coupon @:applied="onCouponApplied"></coupon>
+    <coupon v-on:applied="onCouponApplied"></coupon>
 
+    <h1 v-if="couponApplied">You used your coupon</h1>
 </div>
 
 </body>
